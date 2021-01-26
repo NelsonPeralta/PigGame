@@ -6,11 +6,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pig Game</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
 </head>
 
 <body>
-
-    <script src="script.js"></script>
+    <main>
+        <section id="player1Window" class="player-container player-active">
+            <div class="player-score">
+                <h1>PLAYER 1</h1>
+                <p id="player1Score" style="font-size: 4rem;">0</p>
+            </div>
+            <div class="player-roll">
+                <h1 style="font-weight: normal;">CURRENT</h1>
+                <p id="player1Roll" style="font-size: 2rem">0</p>
+            </div>
+        </section>
+        <section id="player2Window" class="player-container">
+            <div class="player-score">
+                <h1>PLAYER 2</h1>
+                <p id="player2Score" style="font-size: 4rem;">0</p>
+            </div>
+            <div class="player-roll">
+                <h1 style="font-weight: normal;">CURRENT</h1>
+                <p id="player2Roll" style="font-size: 2rem">0</p>
+            </div>
+        </section>
+        <section id="ButtonSection">
+            <button id="NewGameButton" onclick="NewGame()">🔄 New Game</button>
+            <img src="/Images/dice-1.png" alt="" id="DiceImage">
+            <div id="DiceButtons">
+                <button id="RollButton" onclick="RollDice()">🎲 Roll Dice</button>
+                <button id="HoldButton" onclick="HoldRoll()">📥 Hold Roll</button>
+            </div>
+        </section>
+    </main>
 </body>
 
 </html>
