@@ -11,33 +11,43 @@
 
 <body>
     <main>
-        <section id="player1Window" class="player-container player-active">
-            <div class="player-score">
-                <h1>PLAYER 1</h1>
-                <p id="player1Score" style="font-size: 4rem;">0</p>
-            </div>
-            <div class="player-roll">
-                <h1 style="font-weight: normal;">CURRENT</h1>
-                <p id="player1Roll" style="font-size: 2rem">0</p>
-            </div>
+        <section id="player1WLWindow" class="winLossWindow">
+            <p><span style="font-weight: 600;">Wins: </span><span id="player1Wins">0</span></p>
+            <p><span style="font-weight: 600;">Losses: </span><span id="player1Losses">0</span></p>
         </section>
-        <section id="player2Window" class="player-container">
-            <div class="player-score">
-                <h1>PLAYER 2</h1>
-                <p id="player2Score" style="font-size: 4rem;">0</p>
-            </div>
-            <div class="player-roll">
-                <h1 style="font-weight: normal;">CURRENT</h1>
-                <p id="player2Roll" style="font-size: 2rem">0</p>
-            </div>
+        <section id="gameWindow">
+            <section id="player1Window" class="player-container player-active">
+                <div class="player-score">
+                    <h1>PLAYER 1</h1>
+                    <p id="player1Score" style="font-size: 4rem;">0</p>
+                </div>
+                <div class="player-roll">
+                    <h1 style="font-weight: normal;">ROLL STACK</h1>
+                    <p id="player1Roll" style="font-size: 2rem">0</p>
+                </div>
+            </section>
+            <section id="player2Window" class="player-container">
+                <div class="player-score">
+                    <h1>PLAYER 2</h1>
+                    <p id="player2Score" style="font-size: 4rem;">0</p>
+                </div>
+                <div class="player-roll">
+                    <h1 style="font-weight: normal;">ROLL STACK</h1>
+                    <p id="player2Roll" style="font-size: 2rem">0</p>
+                </div>
+            </section>
+            <section id="ButtonSection">
+                <button id="NewGameButton" onclick="NewGame()">🔄 New Game</button>
+                <img id="diceImage" src="/Images/dice-1.png" alt="">
+                <div id="DiceButtons">
+                    <button id="RollButton" onclick="RollDice()">🎲 Roll Dice</button>
+                    <button id="HoldButton" onclick="HoldRoll()">📥 Hold Roll</button>
+                </div>
+            </section>
         </section>
-        <section id="ButtonSection">
-            <button id="NewGameButton" onclick="NewGame()">🔄 New Game</button>
-            <img src="/Images/dice-1.png" alt="" id="DiceImage">
-            <div id="DiceButtons">
-                <button id="RollButton" onclick="RollDice()">🎲 Roll Dice</button>
-                <button id="HoldButton" onclick="HoldRoll()">📥 Hold Roll</button>
-            </div>
+        <section id="player2WLWindow" class="winLossWindow">
+            <p><span style="font-weight: 600;">Wins: </span><span id="player2Wins">0</span></p>
+            <p><span style="font-weight: 600;">Losses: </span><span id="player2Losses">0</span></p>
         </section>
     </main>
 </body>

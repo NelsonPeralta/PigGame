@@ -7,7 +7,6 @@
 }
 
 body{
-    
     height: 100vh;
     background-image: linear-gradient(to bottom right, rgba(250, 250, 250), rgb(0, 125, 255));
     display: flex;
@@ -17,6 +16,20 @@ body{
 }
 
 main{
+    display: flex;
+    justify-content: center;
+    overflow: hidden;     
+}
+
+.winLossWindow{
+    background-color: rgba(255, 255, 255, 0.75);
+    height:fit-content;
+    padding: 1rem;
+    margin: 0 2rem;
+    border-radius: 1rem;
+}
+
+#gameWindow{
     background-color: rgba(255, 255, 255, 0.5);
     width: 62rem;
     height: 37rem;
@@ -59,7 +72,7 @@ main{
     height: 37rem;
 }
 
-#DiceImage{
+#diceImage{
     height: 5rem;
     width: 5rem;
     border: 3px solid grey;
